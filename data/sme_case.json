@@ -1,0 +1,69 @@
+{
+  "business": {
+    "name": "Lantern Coffee Co.",
+    "sector": "Independent café",
+    "location": "Chiang Mai, Thailand (fictional demonstration business)",
+    "currency": "THB",
+    "openingCash": 225000,
+    "cashReserve": 120000,
+    "monthlyReceipts": 545000,
+    "monthsOperating": 28,
+    "confirmedReceivables": 90000,
+    "fundingNeed": 120000,
+    "dataAsOf": "2026-10-18",
+    "dataSource": "Synthetic demonstration data created for this prototype"
+  },
+  "financingOptions": [
+    {
+      "id": "community-bank",
+      "name": "Community bank term loan (illustrative)",
+      "maxAmount": 200000,
+      "minMonthlyReceipts": 350000,
+      "minMonthsOperating": 12,
+      "apr": 0.15,
+      "termMonths": 12,
+      "feeRate": 0.01,
+      "type": "Amortizing term loan",
+      "note": "Illustrative assumptions only; not a real offer"
+    },
+    {
+      "id": "digital-lender",
+      "name": "Digital SME term loan (illustrative)",
+      "maxAmount": 150000,
+      "minMonthlyReceipts": 300000,
+      "minMonthsOperating": 6,
+      "apr": 0.235,
+      "termMonths": 9,
+      "feeRate": 0.02,
+      "type": "Amortizing term loan",
+      "note": "Illustrative assumptions only; not a real offer"
+    },
+    {
+      "id": "invoice-finance",
+      "name": "Invoice finance (illustrative)",
+      "maxAmount": 90000,
+      "minMonthlyReceipts": 0,
+      "minMonthsOperating": 0,
+      "apr": 0.18,
+      "termMonths": 3,
+      "feeRate": 0.01,
+      "type": "Amortizing illustration; capped at confirmed receivables",
+      "note": "Illustrative assumptions only; actual invoice eligibility varies"
+    }
+  ],
+  "weeks": [
+    {"week": 1, "starting": "2026-10-19", "receipts": 132000, "suppliers": 56000, "payroll": 39000, "rent": 0, "other": 30000},
+    {"week": 2, "starting": "2026-10-26", "receipts": 126000, "suppliers": 55000, "payroll": 39000, "rent": 0, "other": 34000},
+    {"week": 3, "starting": "2026-11-02", "receipts": 140000, "suppliers": 65000, "payroll": 39000, "rent": 0, "other": 30000},
+    {"week": 4, "starting": "2026-11-09", "receipts": 121000, "suppliers": 56000, "payroll": 39000, "rent": 28000, "other": 28000},
+    {"week": 5, "starting": "2026-11-16", "receipts": 130000, "suppliers": 64000, "payroll": 39000, "rent": 0, "other": 38000},
+    {"week": 6, "starting": "2026-11-23", "receipts": 109000, "suppliers": 61000, "payroll": 39000, "rent": 0, "other": 55000},
+    {"week": 7, "starting": "2026-11-30", "receipts": 140000, "suppliers": 69000, "payroll": 39000, "rent": 0, "other": 40000},
+    {"week": 8, "starting": "2026-12-07", "receipts": 138000, "suppliers": 67000, "payroll": 39000, "rent": 28000, "other": 17000},
+    {"week": 9, "starting": "2026-12-14", "receipts": 135000, "suppliers": 68000, "payroll": 39000, "rent": 0, "other": 49000},
+    {"week": 10, "starting": "2026-12-21", "receipts": 155000, "suppliers": 72000, "payroll": 39000, "rent": 0, "other": 36000},
+    {"week": 11, "starting": "2026-12-28", "receipts": 129000, "suppliers": 71000, "payroll": 39000, "rent": 0, "other": 50000},
+    {"week": 12, "starting": "2027-01-04", "receipts": 148000, "suppliers": 70000, "payroll": 39000, "rent": 28000, "other": 14000},
+    {"week": 13, "starting": "2027-01-11", "receipts": 140000, "suppliers": 67000, "payroll": 39000, "rent": 0, "other": 52000}
+  ]
+}
