@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b38">
+  <title>FlowPilot | SME Finance Copilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-default-page="overview">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html#overview" aria-label="FlowPilot home"><span class="brand-mark">F</span><span>flowpilot<small>SME finance copilot</small></span></a>
+      <div class="workspace-label">WORKSPACE</div>
+      <div class="business-switcher"><span class="business-avatar">LC</span><span><b id="businessName">Loading…</b><small id="businessSector"></small></span><span class="chevron">⌄</span></div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-item active" href="index.html#overview" aria-current="page" data-page-link="overview"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span class="nav-text">Overview</span></a>
+        <a class="nav-item" href="cash-forecast.html#forecast" data-page-link="forecast"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 18.5 9 13l3.5 3.5L20.5 8.5"/><path d="M15.5 8.5h5v5"/></svg><span class="nav-text">Cash forecast</span></a>
+        <a class="nav-item" href="financing-options.html#financing" data-page-link="financing"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h16M6 4.5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2Z"/><path d="M8 12h3m-3 3h8"/></svg><span class="nav-text">Financing options</span></a>
+        <a class="nav-item" href="evidence-pack.html#evidence" data-page-link="evidence"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z"/><path d="M14 3.5v4h4M9 12h6m-6 3.5h6"/></svg><span class="nav-text">Evidence pack</span></a>
+      </nav>
+      <div class="sidebar-bottom"><div class="sandbox-chip"><span class="live-dot"></span> Demo sandbox</div><p>Sample business only<br>Nothing leaves this browser</p></div>
+    </aside>
+
+    <main id="top" class="main-content">
+      <header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="crumb-sep">/</span><b id="pageLabel">Overview</b></div><div class="topbar-right"><span class="data-label">SYNTHETIC DATA</span><button class="icon-button" id="helpButton" aria-label="About this demo">?</button><div class="avatar">FP</div></div></header>
+      <section id="page-overview" class="page-view" data-page="overview">
+        <section class="page-heading"><div><p class="eyebrow">CASH FLOW · FUNDING READINESS</p><h1>Your cash, at a glance</h1><p class="subhead">A clear view of what may need attention—and where to go next.</p></div><div class="as-of"><span class="calendar-icon">◷</span><span>13-week outlook<small id="asOf"></small></span></div></section>
+        <section class="alert-banner" id="primaryAlert" aria-live="polite"><div class="alert-icon">!</div><div class="alert-copy"><b id="alertTitle">Loading forecast…</b><span id="alertText"></span></div><button id="explainAlert" class="text-button">Explain alert <span>→</span></button></section>
+        <section class="metric-grid" aria-label="Business cash flow summary">
+          <article class="metric-card"><div class="metric-label">Cash today <span class="info-dot" title="Synthetic opening balance for this demonstration">i</span></div><div class="metric-value" id="cashToday">—</div><div class="metric-foot"><span class="neutral-pill">Opening balance</span><span>at forecast start</span></div></article>
+          <article class="metric-card"><div class="metric-label">Lowest projected cash <span class="info-dot" title="Lowest week-end balance across the selected forecast">i</span></div><div class="metric-value" id="minCash">—</div><div class="metric-foot"><span class="risk-pill" id="minWeekTag">—</span><span>week-end balance</span></div></article>
+          <article class="metric-card"><div class="metric-label">Cash reserve <span class="info-dot" title="Owner-set minimum cash buffer">i</span></div><div class="metric-value" id="reserve">—</div><div class="metric-foot"><span class="neutral-pill">Owner-set floor</span><span>editable in case data</span></div></article>
+          <article class="metric-card"><div class="metric-label">Funding need <span class="info-dot" title="Illustrative working-capital request in the sample case">i</span></div><div class="metric-value" id="fundingNeed">—</div><div class="metric-foot"><span class="neutral-pill">Scenario input</span><span>not an application</span></div></article>
+        </section>
+        <section class="overview-grid">
+          <div class="overview-left">
+            <article class="panel overview-intro"><p class="eyebrow">YOUR WORKSPACE</p><h2>Plan the next move with the numbers in view.</h2><p>FlowPilot turns the sample business’s weekly cash plan into a forecast, highlights reserve pressure, and compares illustrative financing assumptions.</p><div class="overview-links"><a href="cash-forecast.html#forecast" class="overview-link"><span class="overview-link-icon">↗</span><span><b>Review the cash forecast</b><small>Explore 13 weeks and run a receipts stress test</small></span><span class="overview-arrow">→</span></a><a href="financing-options.html#financing" class="overview-link"><span class="overview-link-icon">＋</span><span><b>Compare financing options</b><small>See modeled coverage, payment, and cost</small></span><span class="overview-arrow">→</span></a><a href="evidence-pack.html#evidence" class="overview-link"><span class="overview-link-icon">▤</span><span><b>Open the evidence pack</b><small>Review local activity and export the demo record</small></span><span class="overview-arrow">→</span></a></div></article>
+            <article class="panel actions-panel"><div class="panel-header compact"><div><p class="eyebrow">SUGGESTED NEXT STEP</p><h2>Review the cash gap</h2></div><span class="step-number">01</span></div><p id="nextStepText">—</p><a class="primary-button page-action-link" href="cash-forecast.html#forecast">Open cash forecast <span>→</span></a><div class="privacy-note"><span>▣</span><span>Sample data only. Nothing leaves this browser.</span></div></article>
+          </div>
+          <aside class="overview-right">
+            <article class="panel copilot-panel"><div class="copilot-heading"><div class="copilot-avatar"><span>✳</span></div><div><h2>Ask FlowPilot</h2><p>Cash-flow tasks, with the math shown</p></div><span class="secure-badge">LOCAL</span></div>
+              <div class="chat-context"><span class="context-dot"></span>Using <b id="chatBusiness">sample case</b> · no bank connection</div>
+              <div id="chatMessages" class="chat-messages" aria-live="polite"><div class="message assistant"><span class="message-avatar">F</span><div class="message-body"><b>FlowPilot</b><p>I’ve reviewed the 13-week plan. Ask about the cash reserve, test a receipts scenario, or compare the illustrative funding options.</p></div></div></div>
+              <div class="quick-prompts"><button data-prompt="Show the 13-week forecast">Forecast</button><button data-prompt="What if receipts fall 15%?">Stress test</button><button data-prompt="Compare financing for THB 120000">Compare options</button></div>
+              <form id="chatForm" class="chat-input"><label class="sr-only" for="chatInput">Ask FlowPilot a question</label><input id="chatInput" type="text" placeholder="Ask about cash flow…" autocomplete="off"><button type="submit" aria-label="Send question">↑</button></form>
+              <p class="agent-note"><span>✦</span> Calculations are deterministic. The assistant cannot move money, submit a loan application, or approve credit.</p>
+            </article>
+          </aside>
+        </section>
+      </section>
+      <footer class="footer"><span>FlowPilot prototype · FinTechathon 2026 International Track · Topic E</span><button id="disclaimerButton">Data & limitations</button></footer></main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+
+
+
